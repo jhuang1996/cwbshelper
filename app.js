@@ -219,7 +219,7 @@ function makeChart (data, markers) {
 }
 
 var parseDate  = d3.time.format('%Y-%m-%d').parse;
-d3.json('data.json', function (error, rawData) {
+d3.json('https://rawgit.com/jhuang1996/cwbshelper/master/data.json', function (error, rawData) {
   if (error) {
     console.error(error);
     return;
@@ -236,7 +236,7 @@ d3.json('data.json', function (error, rawData) {
     };
   });
 
-  d3.json('markers.json', function (error, markerData) {
+  d3.json('https://rawgit.com/jhuang1996/cwbshelper/master/markers.json', function (error, markerData) {
     if (error) {
       console.error(error);
       return;
